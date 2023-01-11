@@ -194,14 +194,16 @@ img{
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    fill: var(--primary-text-color);
+    /* fill: var(--primary-text-color); */
+    fill: currentColor;
 }
 /* svg smartphone */
 .header-contacts-smartphone{
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    fill: var(--primary-text-color);
+    /* fill: var(--primary-text-color); */
+    fill: currentColor;
 }
 
 /* .header-contacts-mail > svg:hover,
@@ -263,7 +265,7 @@ img{
 }
 
 .footer-social-accounts{
-    display: inline-block;
+    padding-top: 15px;
 }
 .footer-social-accounts p{
     margin: 0;
@@ -497,7 +499,8 @@ img{
     font-size: 16px;
     line-height: 1.18;
 }
-/* ======= Regular Customers ========*/
+/* ------- Regular Customers ---------*/
+
 .main-customers .container{
 
 }
@@ -513,6 +516,7 @@ img{
 }
 .main-customers-list{
     padding: 0;
+    margin: 0;
     display: flex;
     gap: 30px;
 }
@@ -520,9 +524,9 @@ img{
 .main-customers-list li{
     width: 170px;
     height: 92px;
-    /* padding: 16px 32px; */
+    padding: 16px 32px; 
     box-sizing: border-box;
-
+    color: var(--border-color-grey);
     border: 1px var(--border-color-grey) solid;
     
 }
@@ -536,11 +540,11 @@ img{
     /* max-height: 60px; */
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
-    fill: var(--background-color-6);
+    /* padding: 16px 32px; */
+    fill: currentColor;
 }
 
-/* .main-customers-icon:nth-child(1) svg{
+.main-customers-icon:nth-child(1) svg{
     padding: 7px 33px 6.3px 32px;
 }
 .main-customers-icon:nth-child(2) svg{
@@ -557,15 +561,16 @@ img{
 }
 .main-customers-icon:nth-child(6) svg{
     padding: 6.77px 6.21px 9.31px 6px;
-} */
+}
 
-.main-customers-list li:hover,
-.main-customers-list svg:hover{
+.main-customers-list li:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) 
             drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-color: var(--accent-color);
-    fill: #2196F3;
+    color: #2196F3;
+    fill: currentColor;
 }
+
 /*================= portfolio.html ===================*/
 .portfolio-main{
     background-color:var(--background-color-4);
