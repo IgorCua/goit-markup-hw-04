@@ -119,15 +119,14 @@ img{
 }
 /*===================== header ====================*/
 .header{
-    border: 1px solid;
-    border-color: var(--background-color-1);
+    border-bottom: 1px solid var(--background-color-1);
     background-color: var(--background-color-4);
 }
 
 .header .logo{
-    padding: 25px 97px 25px 0px;
+    padding: 25px 0px 25px 0px;
     margin: 0;
-    margin-left: 15px;
+    margin-right: 92px;
 
     color: var(--primary-header-color);
 }
@@ -194,7 +193,6 @@ img{
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    /* fill: var(--primary-text-color); */
     fill: currentColor;
 }
 /* svg smartphone */
@@ -202,20 +200,8 @@ img{
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    /* fill: var(--primary-text-color); */
     fill: currentColor;
 }
-
-/* .header-contacts-mail > svg:hover,
-.header-contacts-mail a{
-    color: #2196F3;
-    fill: var(--accent-color);
-} */
-/* .header-contacts-mail:hover, 
-.header-contacts > svg:hover{
-    color: var(--accent-color);
-    fill: var(--accent-color);
-} */
 
 /*====================== footer ====================== */
 .footer{
@@ -461,7 +447,6 @@ img{
 }
 
 .main-our-team-list > li{
-
     background-color: var(--background-color-4); 
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -473,15 +458,15 @@ img{
 
 .main-our-team-list img{
     width: 270px;
-    margin-bottom: 30px;
 }
 
 .main-our-team-list div{
+    padding-top: 30px;
     margin-bottom: 16px;
 }
 
 .main-our-team-title{
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 10;
 
     font-weight: 500;
@@ -503,14 +488,11 @@ img{
     padding: 0 32px;
 
 }
-.main-our-team-links li{
-    /* margin: 0; */
-}
+
 /* ------- Regular Customers ---------*/
 
-
 .main-customers h2{
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 50px;
 
     font-style: normal;
@@ -526,57 +508,58 @@ img{
     gap: 30px;
 }
 
-.main-customers-list li{
+/* .main-customers-list li{
+    
+} */
+
+.main-customers-list a {
     width: 170px;
     height: 92px;
-    padding: 16px 32px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    
-    color: var(--border-color-grey);
-    
+        
     border: 1px var(--border-color-grey) solid;
     border-radius: 4px;
+    color: var(--border-color-grey);
 }
-.main-customers-list div{
-    width: 100%;
-    height: 100%;
-    /* padding: 16px 32px; */
+
+.main-customers-list a:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    fill: currentColor;
 }
+
 .main-customers-list svg{
-    /* max-width: 106px; */
-    /* max-height: 60px; */
-    width: 100%;
-    height: 100%;
-    /* padding: 16px 32px; */
     fill: currentColor;
 }
 
 .main-customers-icon:nth-child(1) svg{
-    padding: 7px 33px 6.3px 32px;
+    width: 41px;
+    height: 47px;
 }
 .main-customers-icon:nth-child(2) svg{
-    padding: 3px 33px 5px 33px;
+    width: 40px;
+    height: 52px;
 }
 .main-customers-icon:nth-child(3) svg{
-    padding: 8.7px 32.86px 10.12px 29.68px;
+    width: 43px;
+    height: 41px;
 }
 .main-customers-icon:nth-child(4) svg{
-    padding: 8.7px 10.56px 10.68px 11px;
+    width: 84px;
+    height: 41px;
 }
 .main-customers-icon:nth-child(5) svg{
-    padding: 6.77px 21.46px 7.8px 22px;
+    width: 63px;
+    height: 45px;
 }
 .main-customers-icon:nth-child(6) svg{
-    padding: 6.77px 6.21px 9.31px 6px;
+    width: 94px;
+    height: 44px;
 }
 
-.main-customers-list li:hover{
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) 
-            drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-    border-color: var(--accent-color);
-    color: #2196F3;
-    fill: currentColor;
-}
 
 /*================= portfolio.html ===================*/
 .portfolio-main{
