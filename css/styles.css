@@ -214,7 +214,9 @@ img{
     display: flex;
     align-items: baseline;
 }
-
+.footer-box{
+    margin-right: 70px;
+}
 .footer .logo{
     margin-bottom: 20px;
     display: block;
@@ -242,9 +244,7 @@ img{
 .footer-address{
     color: var(--secondary-text-color)
 }
-.footer address{
-    margin-right: 70px;
-}
+
 .footer-contact{
     color: var(--text-rgba-color);
 }
